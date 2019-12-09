@@ -16,7 +16,7 @@ import logo from "../../assets/HMLogosblack.png";
 import "./styles.css";
 
 export default function LoginForm({ signIn, loading, success }) {
-  const { formValues, setInputValue, resetFormValues } = useFormValues({
+  const { formValues, setInputValue } = useFormValues({
     email: "",
     password: ""
   });
@@ -30,7 +30,6 @@ export default function LoginForm({ signIn, loading, success }) {
     formErrors,
     validateForm,
     validateInputValue,
-    clearFormErrors,
     clearInputErrors
   } = useFormErrors(formValidations);
 
