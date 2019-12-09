@@ -1,0 +1,101 @@
+* {
+  font-family: "lato", sans-serif;
+  text-align: center;
+}
+
+.page_container {
+  height: 100%;
+  width: 100%;
+}
+
+.card-container {
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+.flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.form-field {
+  width: 20rem;
+  height: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: border-color 0.5s ease-out;
+}
+
+.btn {
+  border: 1px solid #eee;
+  background-color: white;
+  color: #919191;
+  cursor: pointer;
+  height: 1.75rem;
+}
+
+.btn:hover {
+  background: #e7e7e7;
+}
+
+.btn-success {
+  border-color: lightgreen;
+}
+
+.btn-loading {
+  background: #e7e7e7;
+  cursor: not-allowed;
+}
+
+.form-field-invalid {
+  border-color: salmon;
+}
+
+.pri-color {
+  color: #919191;
+}
+
+.page {
+  margin: calc(50% - 8rem) calc(50% - 200px);
+}
+
+@media screen and (min-width: 800px) {
+  .page {
+    margin: calc(50% - 33rem) calc(50% - 230px);
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  border-top-color: salmon;
+  animation: spinner 0.6s linear infinite;
+}
+
+.spinner-container {
+  position: relative;
+  min-height: 1.5rem;
+  background: #fff;
+}
