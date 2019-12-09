@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import LoginForm from "../../components/Login"
 
 import { auth as AuthUrl } from "../../configs/urls"
 
-export default ( {} ) => {
+export default (  ) => {
 
     const [ credentials, setCredentials ] = useState( {} );
-    
+
     const [ isAuth, setIsAuth ] = useState( false );
 
     const [ isLoading, setIsLoading ] = useState( false );

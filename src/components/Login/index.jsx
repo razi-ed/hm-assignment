@@ -34,16 +34,6 @@ export default function LoginForm({ signIn, loading, success }) {
     clearInputErrors
   } = useFormErrors(formValidations);
 
-  function updateAndValidateInput(event) {
-    setInputValue(event);
-    validateInputValue(event);
-  }
-
-  function resetForm() {
-    resetFormValues();
-    clearFormErrors();
-  }
-
   function submitForm(event) {
     event.preventDefault();
 

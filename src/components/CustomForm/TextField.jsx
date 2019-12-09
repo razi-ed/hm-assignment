@@ -40,7 +40,9 @@ export default function InputText({
         disabled={ disable }
       />
       <br />
-      <div style={{
+      <div 
+        data-testid={`${name}-errors`}
+        style={{
             color: 'red',
             padding: 0,
             height: '1.5rem'
